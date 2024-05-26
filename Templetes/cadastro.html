@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- Mobile Fist -->
+    <link rel="stylesheet" href="../estilos/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- aqui vai as imagens nas CSS -->
+            </div>
+            <div id="formulario">
+                <p>Seja Bem-Vindo(a) a nossa Igreja! Cadastre-se</p>
+                <form action="#" method="post" autocomplete="on">
+                    <p><label for="inome">Nome: </label></p>
+                    <p><input type="text" name="nome" id="inome" required minlength="3" maxlength="10" placeholder="Ex: João" autocomplete="name"></p>
+                    <p><label for="isobrenome">Sobrenome: </label></p>
+                    <p><input type="text" name="sobrenome" id="isobrenome" required minlength="4" maxlength="15" placeholder="Ex: Batista"></p>
+                    <p><label for="idata">Data De Nascimento: </label></p>
+                    <p><input type="date" name="data" id="idata" required autocomplete="bday"></p>
+                    <p><label for="icpf">CPF: </label></p>
+                    <input type="text" name="cpf" id="icpf" required minlength="14" maxlength="14" placeholder="123.321.453-01">
+                    <p><label for="itel">Telefone: </label></p>
+                    <p><input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="Ex: (16) 99432-5456"></p>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
