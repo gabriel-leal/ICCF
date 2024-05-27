@@ -28,8 +28,8 @@
 @media screen and (min-width: 992px) { /* Desktop*/
     
     section#login {
-        width: 950px;
-        height: 350px;
+        width: 800px;
+        height: 320px;
     }
 
     section#login > div#imagem {
@@ -54,5 +54,9 @@
 
     form > div.campo {
         height: 40px;
+    }
+
+    form > input {
+        size: 20px;
     }
 }
