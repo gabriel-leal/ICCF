@@ -31,15 +31,15 @@
     
     section#login {
         width: 800px;
-        height: 320px;
+        height: 290px;
     }
 
     section#login > div#imagem {
         float: right;
         width: 40%;
-        height: 90%;
+        height: 100%;
         margin-right: 35px;
-        margin-top: 10px;
+        margin-bottom: 80px;
     }
 
     section#login > div#formulario {
@@ -60,7 +60,4 @@
         height: 40px;
     }
 
-    form > input {
-        
-    }
 }
