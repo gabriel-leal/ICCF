@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+@media screen and (min-width: 768px) and (max-width: 990px) { /* Tablet */
     
     section#login {
         width: 90vw;
@@ -27,7 +27,7 @@
 
 }
 
-@media screen and (min-width: 992px) { /* Desktop*/
+@media screen and (min-width: 990px) { /* Desktop*/
     
     section#login {
         width: 800px;
