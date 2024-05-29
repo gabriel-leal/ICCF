@@ -3,27 +3,33 @@
 @media screen and (min-width: 768px) and (max-width: 990px) { /* Tablet */
     
     section#login {
-        width: 90vw;
-        height: 250px;
+        width: 85vw;
+        height: 240px;
     }
 
     section#login > div#imagem {
         float: left;
-        width: 30%;
-        height: 90%;
-        margin-left: 18px;
-        margin-top: 6px;
+        width: 32%;
+        height: 95%;
+        margin-left: 50px;
     }
 
     section#login > div#formulario{
         float: right;
-        width: 65%;
+        width: 55%;
+    }
+
+    div#formulario > p {
+        font-size: 0.8em;
     }
 
     form > div.campo {
         height: 40px;
     }
-
+    
+    form input {
+        border-radius: 0px 10px 10px 0px;
+    }
 
 }
 
