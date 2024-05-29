@@ -30,34 +30,36 @@
 @media screen and (min-width: 990px) { /* Desktop*/
     
     section#login {
-        width: 800px;
-        height: 290px;
+        width: 560px;
+        height: 260px;
     }
 
     section#login > div#imagem {
         float: right;
-        width: 40%;
+        width: 42%;
         height: 100%;
-        margin-right: 35px;
-        margin-bottom: 80px;
+        margin-right: 24px;
     }
 
     section#login > div#formulario {
         float: left;
-        width: 50%;
+        width: 49%;
     }
 
     div#formulario > h1 {
-        font-size: 1.5em;
+        font-size: 1.0em;
     }
 
     div#formulario > p {
-        font-size: 1em;
-        margin: 20px 0px;
+        font-size: 0.9em;
+        margin: 15px 0px;
     }
 
     form > div.campo {
         height: 40px;
     }
 
+    form input {
+        border-radius: 0px 10px 10px 0px;
+    }
 }
