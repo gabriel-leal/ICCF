@@ -21,7 +21,7 @@ main {
     height: 120vh;
 }
 
-section#login {
+section#cadastro {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,7 +34,7 @@ section#login {
     transform: translate(-50%, -50%);
 }
 
-section#login > div#imagem {
+section#cadastro > div#imagem {
     display: block;
     background: url(../imagens/Logo.png) no-repeat;
     background-position: center center;
@@ -42,7 +42,7 @@ section#login > div#imagem {
     height: 280px;
 }
 
-section#login > div#formulario {
+section#cadastro > div#formulario {
     display: block;
     padding: 9px;
 }
