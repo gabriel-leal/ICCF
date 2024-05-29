@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 468px) and (max-width: 790px) { /* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) { /* Tablet */
     
     section#cadastro {
         width: 85vw;
@@ -33,7 +33,7 @@
 
 }
 
-@media screen and (min-width: 790px) { /* Desktop*/
+@media screen and (min-width: 769px) { /* Desktop*/
     
     section#cadastro {
         width: 560px;
