@@ -10,8 +10,9 @@
     section#login > div#imagem {
         float: left;
         width: 32%;
-        height: 95%;
-        margin-left: 50px;
+        height: 77%;
+        margin-top: 25px;
+        margin-left: 60px;
     }
 
     section#login > div#formulario{
@@ -42,9 +43,10 @@
 
     section#login > div#imagem {
         float: right;
-        width: 42%;
-        height: 100%;
-        margin-right: 24px;
+        width: 39%;
+        height: 74%;
+        margin-right: 35px;
+        margin-top: 32px;
     }
 
     section#login > div#formulario {
