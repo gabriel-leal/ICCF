@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- bootstrep icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Google icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- Mobile Fist -->
@@ -32,10 +34,12 @@
                     <p><input type="date" name="data" id="idata" required autocomplete="bday"></p>
                     <p><label for="itel">Telefone: </label></p>
                     <p><input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="Ex: 16993246540"></p>
-                    <p><label for="isenha">Senha: </label></p>
-                    <p><input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Crie sua senha"></p>
-                    <p><label for="iconfsenha">Confirme sua senha: </label></p>
-                    <p><input type="password" name="confsenha" id="iconfsenha" required minlength="8" maxlength="20" placeholder="Confirme sua senha"></p>
+                    <div id="password">
+                        <p><label for="isenha">Senha: </label></p>
+                        <p><input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Crie sua senha"> <i class="bi bi-eye-fill" id="btn-password" onclick="showpassword()"></i></p>
+                        <p><label for="iconfsenha">Confirme sua senha: </label></p>
+                        <p><input type="password" name="confsenha" id="iconfsenha" required minlength="8" maxlength="20" placeholder="Confirme sua senha"> <i class="bi bi-eye-fill" id="btn-confirmpassword" onclick="showconfirmpassword()"></i></p>
+                    </div>
                     <div id="msg" class="error"></div>
                     <input type="submit" value="Enviar">
                 </form>

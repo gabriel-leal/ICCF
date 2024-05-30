@@ -70,6 +70,8 @@ input {
     font-size: 1.1em;
     border-radius: 8px;
     width: 100%;
+    outline: 0;
+    padding: 0px 0px 0px 10px;
 }
 
 input::placeholder {
@@ -79,6 +81,18 @@ input::placeholder {
 form > input[type=date] {
     padding-left: 10px;
 
+}
+
+div#password {
+    width: 100%;
+    white-space: nowrap;
+}
+
+div i {
+    font-size: 1.3em;
+    cursor: pointer;
+    position: absolute;
+    right: 6%;
 }
 
 form > input[type=submit] {

@@ -18,3 +18,29 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         }, 1000);
     }
 });
+
+function showpassword() {
+    let inputPass = document.getElementById('isenha')
+    let btnShowPass = document.getElementById('btn-password')
+
+    if(inputPass.type === 'password'){
+        inputPass.setAttribute('type', 'text')
+        btnShowPass.classList.replace('bi-eye-fill','bi-eye-slash-fill')
+    } else {
+        inputPass.setAttribute('type', 'password')
+        btnShowPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill')
+    }
+}
+
+function showconfirmpassword() {
+    let inputConfirmPass = document.getElementById('iconfsenha')
+    let btnShowConfirmPass = document.getElementById('btn-confirmpassword')
+
+    if(inputConfirmPass.type === 'password'){
+        inputConfirmPass.setAttribute('type', 'text')
+        btnShowConfirmPass.classList.replace('bi-eye-fill','bi-eye-slash-fill')
+    } else {
+        inputConfirmPass.setAttribute('type', 'password')
+        btnShowConfirmPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill')
+    }
+}
