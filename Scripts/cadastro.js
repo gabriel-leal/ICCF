@@ -44,3 +44,11 @@ function showconfirmpassword() {
         btnShowConfirmPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill')
     }
 }
+
+$(document).ready(function(){
+    Inputmask("(99) 99999-9999").mask("#itel");
+  });
+
+$(document).ready(function(){
+    Inputmask("99/99/9999").mask("#idata");
+});
