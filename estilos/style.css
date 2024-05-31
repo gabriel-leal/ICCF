@@ -11,5 +11,93 @@
 html, body {
     height: 100%;
     width: 100%;
+    background-color: #E5EFFF;
 }
 
+header {
+    position: relative;
+    background-color: #E5EFFF;
+    padding: 10px;
+}
+
+header h1 {
+    display:inline-flex;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header i {
+    font-size: 2.3em;
+    color: black;
+    cursor: pointer;  
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px; 
+}
+
+menu {
+    display: none;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer h1 {
+    padding-bottom: 40px;
+    font-size: 1.5em;
+}
+
+footer h2 {
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+
+footer h2 > i {
+    display:inline-flex;
+}
+
+footer  a#endereco {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+footer  a#endereco:hover {
+    text-decoration: none;
+}
+
+footer div {
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-top: 70px;
+}
+
+footer p#direitos{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+footer p#desenvolvido {
+    padding-bottom: 20px;
+}
+
+footer p#desenvolvido > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+footer p#desenvolvido > a:hover {
+    text-decoration: none;
+}
