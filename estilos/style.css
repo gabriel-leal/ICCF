@@ -17,13 +17,16 @@ html, body {
 header {
     position: relative;
     background-color: #E5EFFF;
-    padding: 10px;
+    padding-top: 10px;
 }
 
-header h1 {
-    display:inline-flex;
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+header img {
+    height: 50px;
+    padding-bottom: 7px;
+}
+
+header p {
+    text-align: left;
 }
 
 header i {

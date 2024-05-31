@@ -16,9 +16,22 @@
         display: block;
     }
 
+    header img {
+        height: 79px;
+    }
+    
+    header p {
+        text-align: center;
+    }
 
+    header i {
+        font-size: 4em;
+        padding-top: 50px;
+    }
+     
 
     menu {
-        display: block;
+        display: block; 
     }
+    
 }
