@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="../estilos/cadastro.css">
     <!-- Média Queries -->
     <link rel="stylesheet" href="../estilos/cadastroMQ.css">
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- inputMask -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7-beta.0/inputmask.min.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
@@ -27,17 +23,17 @@
             </div>
             <div id="formulario">
                 <p>Seja Bem-Vindo(a) a nossa Igreja! Cadastre-se</p>
-                <form  action="#" method="post" autocomplete="on">
+                <form id="idform" action="#" method="post" autocomplete="on">
                     <p><label for="inome">Nome: </label></p>
                     <p><input type="text" name="nome" id="inome" required minlength="3" maxlength="10" placeholder="Ex: João" autocomplete="name"></p>
                     <p><label for="isobrenome">Sobrenome: </label></p>
                     <p><input type="text" name="sobrenome" id="isobrenome" required minlength="4" maxlength="15" placeholder="Ex: Batista"></p>
                     <p><label for="imail">Email: </label></p>
-                    <p><input type="email" name="mail" id="imail" required autocomplete="email" placeholder="Ex: jbatista@gmail.com"></p>
+                    <p><input type="email" name="email" id="imail" required autocomplete="email" placeholder="Ex: jbatista@gmail.com"></p>
                     <p><label for="idata">Data De Nascimento: </label></p>
-                    <p><input type="date" name="data" id="idata" required autocomplete="bday"></p>
+                    <p><input type="date" name="datanasc" id="idata" required autocomplete="bday"></p>
                     <p><label for="itel">Telefone: </label></p>
-                    <p><input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="Ex: 16993246540"></p>
+                    <p><input type="tel" name="telefone" id="itel" required autocomplete="tel" placeholder="Ex: 16993246540"></p>
                     <div id="password">
                         <p><label for="isenha">Senha: </label></p>
                         <p><input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Crie sua senha"> <i class="bi bi-eye-fill" id="btn-password" onclick="showpassword()"></i></p>

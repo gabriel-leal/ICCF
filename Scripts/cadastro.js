@@ -9,13 +9,38 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         message.classList.remove('success');
         message.classList.add('error');
     } else {
-        message.textContent = 'Cadastro realizado com sucesso!';
-        message.classList.remove('error');
-        message.classList.add('success');
+        const formE1 = document.getElementById('idform')
 
+        formE1.addEventListener('submit', evento => {
+            evento.preventDefault();
+
+            const formData = new FormData(formE1);
+            const data = Object.fromEntries(formData);
+
+            fetch('http://localhost:8000/cadastro', {
+                method: 'post',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then(res => res.json()).then(data => {
+                console.log(data)
+                const message = document.getElementById('msg');
+                message.textContent = data;
+                if (data == "jaexiste") {
+                    message.textContent = 'Cadastro já existe!';
+                    message.classList.remove('success');
+                    message.classList.add('error');
+                } else {
+                    message.textContent = 'Cadastro realizado com sucesso!';
+                    message.classList.remove('error');
+                    message.classList.add('success');
+                }
+            })   
+        })
         setTimeout(() => {
             history.back();
-        }, 1000);
+        }, 2000);
     }
 });
 
@@ -44,11 +69,3 @@ function showconfirmpassword() {
         btnShowConfirmPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill')
     }
 }
-
-$(document).ready(function(){
-    Inputmask("(99) 99999-9999").mask("#itel");
-  });
-
-$(document).ready(function(){
-    Inputmask("99/99/9999").mask("#idata");
-});
