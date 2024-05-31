@@ -38,6 +38,30 @@ header i {
 
 menu {
     display: none;
+    text-align: center;
+    border-top: 3px solid #06265B;
+    padding: 10px;
+}
+
+menu a {
+    padding: 4px;
+    text-decoration: none;
+    color: #06265B;
+    font-size: 1.5em;
+    padding-right: 7px;
+    padding-left: 7px;
+    transition-duration: 0.5s;
+}
+
+menu a:hover{
+    text-align: center;
+    background-color: #06265B;
+    color: white;
+    border-radius: 6px;
+}
+
+menu li {
+    display: inline-block;
 }
 
 main {
