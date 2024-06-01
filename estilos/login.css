@@ -141,3 +141,14 @@ form > a.botao:hover {
 form > a.botao > span {
     font-size: 0.8em;
 }
+
+div#esquecisenha {
+    font-size: 17px;
+    text-align: center;
+    color: #4470B1;
+    text-decoration: underline;
+}
+
+div#esquecisenha:hover {
+    text-decoration: none;
+}

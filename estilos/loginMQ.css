@@ -38,15 +38,15 @@
     
     section#login {
         width: 560px;
-        height: 260px;
+        height: 300px;
     }
 
     section#login > div#imagem {
         float: right;
-        width: 39%;
-        height: 77%;
-        margin-right: 38px;
-        margin-top: 32px;
+        width: 40%;
+        height: 67%;
+        margin-right: 39px;
+        margin-top: 43px;
     }
 
     section#login > div#formulario {
