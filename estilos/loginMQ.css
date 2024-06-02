@@ -4,13 +4,13 @@
     
     section#login {
         width: 85vw;
-        height: 250px;
+        height: 280px;
     }
 
     section#login > div#imagem {
         float: left;
         width: 32%;
-        height: 77%;
+        height: 72%;
         margin-top: 25px;
         margin-left: 60px;
     }
@@ -22,6 +22,10 @@
 
     div#formulario > p {
         font-size: 0.8em;
+    }
+
+    div#esquecisenha {
+        margin-top: 5px;
     }
 
     form > div.campo {
@@ -38,13 +42,13 @@
     
     section#login {
         width: 560px;
-        height: 300px;
+        height: 290px;
     }
 
     section#login > div#imagem {
         float: right;
         width: 40%;
-        height: 67%;
+        height: 70%;
         margin-right: 39px;
         margin-top: 43px;
     }
@@ -56,6 +60,10 @@
 
     div#formulario > h1 {
         font-size: 1.0em;
+    }
+
+    div#esquecisenha {
+        margin-top: 5px;
     }
 
     div#formulario > p {
