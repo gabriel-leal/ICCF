@@ -13,4 +13,24 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/login")
+@app.get("/login/{email}/{senha}")
+async def login(email : str, senha : str):
+    dataBase = r'../BDiccf'
+    conn = create_connect(dataBase)
+    query = f"""
+    select email
+    from cadastro
+    where email = "{email}"
+    """
+    linhas = execute_query(conn, query)
+    mail = (len(linhas))
+    
+    query = f"""
+    select senha
+    from cadastro
+    where senha = "{senha}"
+    """
+    linhas = execute_query(conn, query)
+    sen = (len(linhas))
+    
+    return [mail, sen]

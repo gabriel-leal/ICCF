@@ -1,4 +1,3 @@
-// confirmação de password e envio para a API
 document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault();
     const password = document.getElementById('isenha').value;
@@ -45,15 +44,6 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     }
 });
 
-// Máscaras do formulário
-$('#itel').mask('(00) 00000-0000');
-$('#idata').mask('00/00/0000');
-
-// verificação de data e telefone
-
-
-
-// Olho ShowPassword
 function showpassword() {
     let inputPass = document.getElementById('isenha')
     let btnShowPass = document.getElementById('btn-password')

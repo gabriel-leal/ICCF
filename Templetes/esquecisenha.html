@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+     <!-- bootstrep icons-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- Mobile First -->
+     <link rel="stylesheet" href="../estilos/esquecisenha.css">
+     <!-- Media Queries -->
+     <link rel="stylesheet" href="../estilos/esquecisenhaMQ.css">
+    <title>Esqueci a Senha</title>
+</head>
+<body>
+    <main>
+        <section id="esquecisenha">
+            <div id="imagem">
+                <!-- aqui vai as imagens nas CSS -->
+            </div>
+            <div id="formulario">
+                <form action="#" method="post" autocomplete="on">
+                <h1>Recuperação de senha</h1>
+                    <div class="campo"> 
+                        <label for="insenha">Nova Senha: </label>
+                        <input type="text" name="nsenha" id="insenha" required minlength="8" maxlength="20" placeholder="Crie sua nova senha">
+                    </div>
+                    <div class="campo">
+                        <label for="icnsenha">Nova Senha: </label>
+                        <input type="text" name="ncsenha" id="icnsenha" required minlength="8" maxlength="20" placeholder="Confirme sua nova senha">
+                    </div>
+                    <div id="msg" class="error"></div>
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="../Scripts/esquecisenha.js"></script>
+</body>
+</html>

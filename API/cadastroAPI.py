@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 @app.post("/cadastro")
-async def cadastro(request: Request):
+async def cadastro(request : Request):
     json = await request.json()
     dataBase = r'../BDiccf'
     conn = create_connect(dataBase)

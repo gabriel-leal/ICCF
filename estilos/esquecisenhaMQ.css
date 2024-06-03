@@ -2,12 +2,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
     
-    section#login {
+    section#esquecisenha {
         width: 85vw;
         height: 280px;
     }
 
-    section#login > div#imagem {
+    section#esquecisenha > div#imagem {
         float: left;
         width: 32%;
         height: 72%;
@@ -15,17 +15,16 @@
         margin-left: 60px;
     }
 
-    section#login > div#formulario{
+    section#esquecisenha > div#formulario{
         float: right;
         width: 55%;
     }
 
-    div#formulario > p {
-        font-size: 0.8em;
-    }
-
-    div#esquecisenha {
-        margin-top: 5px;
+    form > h1 {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #06265B;
+        text-align: center;
     }
 
     form > div.campo {
@@ -40,40 +39,30 @@
 
 @media screen and (min-width: 992px) { /* Desktop*/
     
-    section#login {
+    section#esquecisenha {
         width: 560px;
         height: 290px;
     }
 
-    section#login > div#imagem {
+    section#esquecisenha > div#imagem {
         float: right;
         width: 40%;
         height: 70%;
         margin-right: 39px;
-        margin-top: 43px;
+        margin-top: 30px;
     }
 
-    section#login > div#formulario {
+    section#esquecisenha > div#formulario {
         float: left;
-        width: 49%;
+        width: 50%;
+        margin-top: 30px;
     }
 
-    div#formulario > h1 {
-        font-size: 1.0em;
-    }
-
-    div#esquecisenha a {
+    form > h1 {
+        font-size: 1.3em;
+        font-weight: bold;
         color: #06265B;
-        margin-top: 5px;
-        cursor: pointer;
-    }
-
-    div#esquecisenha a:hover {
-        text-decoration: none;
-    }
-
-    div#formulario > p {
-        font-size: 1em;
+        text-align: center;
     }
 
     form > div.campo {
