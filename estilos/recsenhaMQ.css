@@ -18,7 +18,6 @@
     section#esquecisenha > div#formulario{
         float: right;
         width: 55%;
-        margin-top: 30px;
     }
 
     form > h1 {
@@ -56,7 +55,7 @@
     section#esquecisenha > div#formulario {
         float: left;
         width: 50%;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     form > h1 {
