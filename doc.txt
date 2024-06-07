@@ -1,2 +1,0 @@
-uvicorn cadastroAPI:app --reload
-
