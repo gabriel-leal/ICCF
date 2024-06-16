@@ -34,5 +34,7 @@ async def cadastro(request : Request):
     else:
         print('Já existe')
         msg = 'jaexiste'
-        
+
+    conn.close()
+            
     return msg
