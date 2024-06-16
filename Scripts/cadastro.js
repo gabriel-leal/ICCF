@@ -4,10 +4,12 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     const confirmPassword = document.getElementById('iconfsenha').value;
     const message = document.getElementById('msg');
 
+    // confirmação de senha
     if (password !== confirmPassword) {
         message.textContent = 'As senhas não coincidem.';
         message.classList.remove('success');
         message.classList.add('error');
+     // envio para o BD
     } else {
         const formE1 = document.getElementById('idform')
 
@@ -27,6 +29,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
                 console.log(data)
                 const message = document.getElementById('msg');
                 message.textContent = data;
+                // teste de cadastro já existente
                 if (data == "jaexiste") {
                     message.textContent = 'Cadastro já existe!';
                     message.classList.remove('success');
@@ -38,12 +41,18 @@ document.getElementById('formulario').addEventListener('submit', function(event)
                 }
             })   
         })
+        // volta para tela de login
         setTimeout(() => {
             history.back();
         }, 2000);
     }
 });
 
+// máscaras de formulário
+$('#idata').mask('00/00/0000');
+$('#itel').mask('(00) 00000-0000');
+
+// olhinho mostra senha 
 function showpassword() {
     let inputPass = document.getElementById('isenha')
     let btnShowPass = document.getElementById('btn-password')

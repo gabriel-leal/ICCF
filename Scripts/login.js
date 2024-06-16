@@ -13,15 +13,6 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         console.log(data)
         const message = document.getElementById('msg');
         message.textContent = data;
-        //if (data == "jaexiste") {
-        //    message.textContent = 'Cadastro já existe!';
-        //    message.classList.remove('success');
-        //    message.classList.add('error');
-        //} else {
-        //    message.textContent = 'Cadastro realizado com sucesso!';
-        //    message.classList.remove('error');
-        //    message.classList.add('success');
-        //}
     })
 });
 
