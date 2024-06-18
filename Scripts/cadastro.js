@@ -39,12 +39,8 @@ document.getElementById('formulario').addEventListener('submit', function(event)
                     message.classList.remove('error');
                     message.classList.add('success');
                 }
-            })   
+            })
         })
-        // volta para tela de login
-        setTimeout(() => {
-            history.back();
-        }, 2000);
     }
 });
 

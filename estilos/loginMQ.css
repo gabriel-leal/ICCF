@@ -3,35 +3,45 @@
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
     
     section#login {
-        width: 85vw;
-        height: 280px;
+        width: 560px;
+        height: 310px;
     }
 
     section#login > div#imagem {
         float: left;
-        width: 32%;
-        height: 72%;
-        margin-top: 25px;
-        margin-left: 60px;
+        width: 40%;
+        height: 65%;
+        margin-left: 25px;
+        margin-top: 40px;
     }
 
-    section#login > div#formulario{
+    section#login > div#formulario {
         float: right;
-        width: 55%;
+        width: 49%;
+    }
+
+    div#formulario > h1 {
+        font-size: 1.0em;
+    }
+
+    div#esquecisenha a {
+        color: #06265B;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    div#esquecisenha a:hover {
+        text-decoration: none;
     }
 
     div#formulario > p {
-        font-size: 0.8em;
-    }
-
-    div#esquecisenha {
-        margin-top: 5px;
+        font-size: 1em;
     }
 
     form > div.campo {
         height: 40px;
     }
-    
+
     form input {
         border-radius: 0px 10px 10px 0px;
     }
@@ -42,13 +52,13 @@
     
     section#login {
         width: 560px;
-        height: 290px;
+        height: 310px;
     }
 
     section#login > div#imagem {
         float: right;
         width: 40%;
-        height: 70%;
+        height: 65%;
         margin-right: 39px;
         margin-top: 43px;
     }
