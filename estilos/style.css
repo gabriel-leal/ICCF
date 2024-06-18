@@ -30,8 +30,8 @@ header p {
 }
 
 header i {
-    font-size: 2.3em;
-    color: black;
+    font-size: 2.4em;
+    color: #06265B;
     cursor: pointer;  
     position: absolute;
     top: 50%;
@@ -69,6 +69,10 @@ menu li {
 main {
     background-color: white;
     padding: 10px;
+}
+
+main section {
+    font-size: 1.7em;
 }
 
 footer {
@@ -114,16 +118,12 @@ footer p#direitos{
     padding-bottom: 30px;
 }
 
-footer p#desenvolvido {
-    padding-bottom: 20px;
-}
-
-footer p#desenvolvido > a {
+footer p#direitos > a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: bolder;
 }
 
-footer p#desenvolvido > a:hover {
+footer p#direitos > a:hover {
     text-decoration: none;
 }

@@ -52,13 +52,13 @@
     
     section#login {
         width: 560px;
-        height: 310px;
+        height: 300px;
     }
 
     section#login > div#imagem {
         float: right;
-        width: 40%;
-        height: 65%;
+        width: 38%;
+        height: 64%;
         margin-right: 39px;
         margin-top: 43px;
     }
