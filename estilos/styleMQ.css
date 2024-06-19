@@ -4,16 +4,6 @@
     
     body {
         overflow-x: hidden;
-        display: block;
-    }
-
-}
-
-@media screen and (min-width: 992px) { /* Desktop*/
-
-    body {
-        overflow-x: hidden;
-        display: block;
     }
 
     header img {
@@ -22,15 +12,76 @@
     
     header p {
         text-align: center;
+    }  
+    
+    aside#sidebar{
+        width: 55px;
+        min-width: 55px;
     }
 
-    header i {
-        font-size: 3.8em;
-        padding-top: 50px;
+    button#toggle-btn{
+        padding: 1rem .9rem;
     }
 
-    menu {
-        display: block; 
+    a.sidebar-link {
+        padding: .500rem .9rem;
+    }
+
+    main {
+        margin-left: 50px;
+    }
+
+    main section {
+        margin: auto;
+        width: 80vw;
+        text-indent: 2em;
+        text-align: justify;
+    }
+
+    footer {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) { /* Desktop*/
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header img {
+        height: 79px;
     }
     
+    header p {
+        text-align: center;
+    }  
+    
+    aside#sidebar{
+        width: 55px;
+        min-width: 55px;
+    }
+
+    button#toggle-btn{
+        padding: 1rem .9rem;
+    }
+
+    a.sidebar-link {
+        padding: .500rem .9rem;
+    }
+
+    main {
+        margin-left: 50px;
+    }
+
+    main section {
+        margin: auto;
+        width: 80vw;
+        text-indent: 2em;
+        text-align: justify;
+    }
+
+    footer {
+        margin-left: 50px;
+    }
 }

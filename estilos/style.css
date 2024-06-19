@@ -6,6 +6,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -17,68 +18,105 @@ html, body {
 header {
     position: relative;
     background-color: #E5EFFF;
-    padding-top: 10px;
-}
-
-header img {
-    height: 50px;
-    padding-bottom: 7px;
+    padding: 15px;
 }
 
 header p {
-    text-align: left;
-}
-
-header i {
-    font-size: 2.4em;
-    color: #06265B;
-    cursor: pointer;  
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px; 
-}
-
-menu {
-    display: none;
     text-align: center;
-    padding: 10px;
 }
 
-menu a {
-    padding: 4px;
-    text-decoration: none;
-    color: #06265B;
-    font-size: 1.5em;
-    padding-right: 7px;
-    padding-left: 7px;
-    transition-duration: 0.5s;
+header img {
+    height: 45px;
 }
 
-menu a:hover{
-    text-align: center;
-    background-color: #06265B;
+div.wrapper {
+    display: flex;
+}
+
+aside#sidebar {
+    width: 40px;
+    min-width: 40px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #041d44;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+aside#sidebar.expand{
+    width: 260px;
+    min-width: 260px;
+}
+
+button#toggle-btn{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 1rem .4rem;
+}
+
+button#toggle-btn i {
+    font-size: 1.5rem;
     color: white;
-    border-radius: 6px;
 }
 
-menu li {
-    display: inline-block;
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.sidebar-nav{
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: .500rem .5rem;
+    color: white;
+    display: block;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+    text-decoration: none;
+}
+
+.sidebar-link i{
+    font-size: 1.2rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover{
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #3b7ddd;
+}
+
+.sidebar-item {
+    position: relative;
 }
 
 main {
     background-color: white;
     padding: 10px;
+    overflow: hidden;
+    margin-left: 40px;
 }
 
 main section {
-    font-size: 1.7em;
+    font-size: 1em;
+    margin: auto;
+    text-indent: 2em;
+    text-align: justify;
 }
 
 footer {
     background-color: black;
     color: white;
     padding: 10px;
+    margin-left: 40px;
 }
 
 footer h1 {
@@ -90,11 +128,11 @@ footer h2 {
     display: inline-flex;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 15px;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 footer h2 > i {
-    display:inline-flex;
+    display:block;
 }
 
 footer  a#endereco {
@@ -110,7 +148,7 @@ footer  a#endereco:hover {
 footer div {
     width: 100%;
     border-bottom: 1px solid white;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 footer p#direitos{
