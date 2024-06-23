@@ -69,7 +69,7 @@ div#formulario > p {
 
 div.incorrect{
     color: red;
-    padding: 4px;
+    padding: 5px;
 }
 
 div#esquecisenha a {
@@ -84,7 +84,7 @@ form > div.campo {
     width: 100%;
     height: 40px;
     border-radius: 8px;
-    margin: 5px 0px;
+    margin: 4px 0px;
 }
 
 form label {
@@ -162,4 +162,12 @@ div#esquecisenha {
 
 div#esquecisenha:hover {
     text-decoration: none;
+}
+
+div i {
+    font-size: 1.3em;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    padding-top: 4px;
 }

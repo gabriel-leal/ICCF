@@ -1,2 +1,3 @@
-uvicorn cadastroAPI:app --reload
-
+* Iniciar esses códigos em terminais diferentes *
+uvicorn cadastroAPI:app --reload --port 8080
+python -m http.server

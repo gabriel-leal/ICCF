@@ -19,7 +19,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
             const formData = new FormData(formE1);
             const data = Object.fromEntries(formData);
 
-            fetch('http://localhost:8000/cadastro', {
+            fetch('http://localhost:8080/cadastro', {
                 method: 'post',
                 headers: {
                     'content-type': 'application/json'
@@ -38,6 +38,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
                     message.textContent = 'Cadastro realizado com sucesso!';
                     message.classList.remove('error');
                     message.classList.add('success');
+                    window.location.href = "http://localhost:8000"
                 }
             })
         })

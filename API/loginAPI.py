@@ -26,13 +26,17 @@ async def login(email : str, senha : str):
     mail = (len(linhas))
     
     query = f"""
-    select senha
+    select senha, nome
     from cadastro
     where senha = "{senha}" and email = "{email}"
     """
     linhas = execute_query(conn, query)
     sen = (len(linhas))
     
+    if sen == 1:
+        logado = linhas[0][1]
+    else:
+        logado = ""
     conn.close()
     
-    return [mail, sen] 
+    return [mail, sen, logado] 
