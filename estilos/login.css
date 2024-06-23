@@ -104,6 +104,7 @@ div.campo > input {
     height: 100%;
     border: 0px ;
     padding: 4px;
+    overflow: hidden;
     transform: translateY(-13px);
     border-left: 2px solid #06265B;
     border-radius: 0px 10px 10px 0px;
