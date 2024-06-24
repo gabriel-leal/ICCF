@@ -1,10 +1,10 @@
 function meuload() {
-    let logado = localStorage.getItem('logado')
-    if (logado == "") {
-        document.getElementById('inome').innerHTML = 'Entrar'
-    } else {
-         document.getElementById('inome').innerHTML = 'Olá, ' + localStorage.getItem('logado')
-    }
+    //let logado = localStorage.getItem('logado')
+    //if (logado == "") {
+    //    document.getElementById('inome').innerHTML = 'Entrar'
+    //} else {
+    //     document.getElementById('inome').innerHTML = 'Olá, ' + localStorage.getItem('logado')
+    //}
 }
 const hamburger = document.querySelector("#toggle-btn");
 
