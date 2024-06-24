@@ -171,4 +171,5 @@ div i {
     position: absolute;
     right: 5%;
     padding-top: 4px;
+    overflow: hidden;
 }
